@@ -1,0 +1,4 @@
+# Core runtime is stdlib-only. Install extras as needed:
+#   pip install -e ".[live]"   # Sportradar/X connectors
+#   pip install -e ".[ml]"     # neural generation + LoRA training
+#   pip install -e ".[dev]"    # tests + linting

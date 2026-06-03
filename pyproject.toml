@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastbreak"
+version = "0.1.0"
+description = "Low-latency live NBA insight engine: detects high-percentile in-game stats, generates headlines, and selects the most surprising ones to publish."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Alvaro Aguado" }]
+keywords = ["nba", "sports-analytics", "real-time", "nlg", "lora"]
+dependencies = []  # core runtime is dependency-free (stdlib only)
+
+[project.optional-dependencies]
+# Live feeds & publishing
+live = ["requests>=2.31", "websocket-client>=1.7"]
+# Neural headline generation + LoRA training
+ml = ["torch>=2.2", "transformers>=4.40", "peft>=0.11", "datasets>=2.19", "accelerate>=0.30"]
+# Dev / test
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.4", "mypy>=1.10"]
+
+[project.scripts]
+fastbreak-demo = "fastbreak.cli:demo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

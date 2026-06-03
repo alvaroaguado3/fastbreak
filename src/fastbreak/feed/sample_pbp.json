@@ -1,0 +1,24 @@
+{
+  "context": {
+    "game_id": "2026-finals-g1",
+    "home_team": "New York Knicks",
+    "away_team": "San Antonio Spurs",
+    "game_type": "finals",
+    "venue": "Madison Square Garden",
+    "city": "New York",
+    "state": "NY",
+    "opponent": "San Antonio Spurs"
+  },
+  "events": [
+    {"t": 0,   "subject_id": "jb",  "subject_name": "Jalen Brunson",      "subject_type": "player", "stat": "points",     "value": 8,   "quarter": 1, "clock_seconds": 480},
+    {"t": 30,  "subject_id": "vw",  "subject_name": "Victor Wembanyama",  "subject_type": "player", "stat": "blocks",     "value": 4,   "quarter": 1, "clock_seconds": 300, "opponent": "New York Knicks"},
+    {"t": 45,  "subject_id": "vw",  "subject_name": "Victor Wembanyama",  "subject_type": "player", "stat": "points",     "value": 19,  "quarter": 1, "clock_seconds": 120, "opponent": "New York Knicks"},
+    {"t": 60,  "subject_id": "jb",  "subject_name": "Jalen Brunson",      "subject_type": "player", "stat": "points",     "value": 23,  "quarter": 2, "clock_seconds": 600},
+    {"t": 75,  "subject_id": "kt",  "subject_name": "Karl-Anthony Towns", "subject_type": "player", "stat": "rebounds",   "value": 14,  "quarter": 2, "clock_seconds": 360},
+    {"t": 90,  "subject_id": "vw",  "subject_name": "Victor Wembanyama",  "subject_type": "player", "stat": "blocks",     "value": 7,   "quarter": 3, "clock_seconds": 420, "opponent": "New York Knicks"},
+    {"t": 110, "subject_id": "jb",  "subject_name": "Jalen Brunson",      "subject_type": "player", "stat": "points",     "value": 41,  "quarter": 4, "clock_seconds": 280},
+    {"t": 115, "subject_id": "jb",  "subject_name": "Jalen Brunson",      "subject_type": "player", "stat": "plus_minus", "value": 28,  "quarter": 4, "clock_seconds": 280},
+    {"t": 130, "subject_id": "vw",  "subject_name": "Victor Wembanyama",  "subject_type": "player", "stat": "points",     "value": 38,  "quarter": 4, "clock_seconds": 90,  "opponent": "New York Knicks"},
+    {"t": 132, "subject_id": "vw",  "subject_name": "Victor Wembanyama",  "subject_type": "player", "stat": "blocks",     "value": 9,   "quarter": 4, "clock_seconds": 90,  "opponent": "New York Knicks"}
+  ]
+}
